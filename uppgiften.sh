@@ -16,7 +16,7 @@ do
             
 
         "Option 2")
-            echo "add text to notes"
+            echo "add text to note"
             echo >> $docname.txt;;
         "Option 3")
             echo "you chose choice $REPLY which is $opt"
