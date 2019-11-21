@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bash Menu made by....
+# Bash Menu made by... not me
 
 PS3='Please enter your choice: '
 options=("skapa ny anteckningsfil" "Option 2" "Option 3" "Quit")
@@ -16,8 +16,8 @@ do
             
 
         "Option 2")
-            echo "hello"
-            ;;
+            echo "add text to notes"
+            echo >> $docname.txt;;
         "Option 3")
             echo "you chose choice $REPLY which is $opt"
             ;;
