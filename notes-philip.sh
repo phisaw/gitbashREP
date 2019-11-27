@@ -1,13 +1,15 @@
 #!/bin/bash
+$1=notes.txt
 notespath=~/skola/bash-data/notes.txt
 customnotespath=~/skola/bash-data/$1.txt
+deleteNote=~/skola/bash-data/*.txt
 PS3='Please enter your choice:'
 choices=("create a new note" "add text to note" "create a copy of note" "Quit")
 select choice in "${choices[@]}"
 do
     case $choice in
         "create a new note")
-            rm -f ~/skola/bash-data/*.txt
+            rm -f $deleteNote
             #removes need for if statement. removes exception if no file found
             if [[ $1 ]]; then
             echo > $customnotespath
